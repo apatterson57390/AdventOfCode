@@ -45,7 +45,6 @@ func count_increases(filePath string) int {
 			}
 
 			// Account for the first iteration which won't have a lastWindowSum and which won't count towards increases
-
 			if lastWindowSum == 0 {
 				lastWindowSum = windowSum
 				slidingWindow = slidingWindow[1:]
