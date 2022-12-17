@@ -66,7 +66,6 @@ func rps_battle(opponentMoveKey string, playerMoveKey string) {
 }
 
 func main() {
-
 	input, err := ioutil.ReadFile("puzzleInput.txt")
 
 	if err != nil {
@@ -75,6 +74,7 @@ func main() {
 
 	rounds := strings.Split(string(input), "\n")
 
+	// for each round of rock,paper,scissors - initiate the rock paper scissors battle!
 	for i := 0; i < len(rounds); i++ {
 		moves := strings.Split(rounds[i], " ")
 		rps_battle(moves[0], moves[1])
